@@ -1,0 +1,107 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    padding: 0 2rem;
+  }
+}
+
+
+
+
+/* Css do agrupamento Buy.vue and Sale.vue */
+
+.ativoBuy, .ativoSale, .ativoSearch, .ativHome{
+  margin-top: 150px;
+  padding: 130px;
+  border: black 1px solid;
+  border-radius: 4px;
+}
+
+.ativoBuy button, .ativoSale button{
+  margin: 5px;
+  margin-top: 20px;
+}
+
+.valorBuy, .valorSale{
+  margin-top: 30px;
+
+}
+
+.quantvalBuy, .quantvalSale{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.valorOrder, .valororderSale{
+  margin-top: 30px;
+}
+
+/* Estilização de botãoes */
+
+#buyButton, #saleButton, #cancelButton, #searchButton{
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  width: 70px;
+}
+
+#buyButton:hover, #searchButton:hover{
+  background-color: rgb(131, 131, 131);
+  cursor: pointer;
+}
+
+#saleButton, #cancelButton{
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+#saleButton:hover, #cancelButton:hover{
+  background-color: rgb(231, 231, 231);
+  cursor: pointer;
+}
+
+.ativoHome img{
+  height: 25px;
+  
+}
+
+.ativoHome button{
+  margin: 5px;
+}
+
+body input{
+  padding: 3px;
+  border-radius: 3px 1px solid;
+}
